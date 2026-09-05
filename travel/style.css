@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+:root { --ink: #102a2b; --deep-ink: #0b2224; --coral: #f06c4e; --cream: #f8f5ef; --sand: #ede8de; --muted: #6a7471; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: 'DM Sans', sans-serif; }
+a { color: inherit; text-decoration: none; }
+.site-header { position: relative; z-index: 10; width: 100%; background: #fff; box-shadow: 0 2px 15px rgba(16,42,43,.06); }
+.brand-logo { width: 158px; height: auto; }
+.navbar .nav-link { color: #1e5183; font-size: .83rem; font-weight: 600; }
+.navbar .nav-link:hover, .navbar .nav-link:focus { color: #808080; }
+.navbar .nav-link.active { color: #1e5183; }
+.navbar-toggler { border-color: #1e5183; }
+.navbar-toggler-icon { filter: none; }
+.hero-section { min-height: 700px; display: flex; align-items: center; color: #fff; background: linear-gradient(90deg, rgba(8,32,34,.84), rgba(8,32,34,.43) 48%, rgba(8,32,34,.08)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1900&q=90') center/cover; }
+.hero-content { position: relative; width: 100%; padding-top: 65px; padding-bottom: 140px; }
+.eyebrow { margin-bottom: 1.1rem; text-transform: uppercase; font-size: .69rem; letter-spacing: .18em; font-weight: 700; }
+.hero-section h1 { max-width: 670px; margin-bottom: 1.25rem; font-size: clamp(3.6rem, 7vw, 6.8rem); font-weight: 500; line-height: .94; letter-spacing: -.04em; }
+h1 em, h2 { font-family: 'Playfair Display', serif; }
+.hero-copy { max-width: 410px; margin-bottom: 2rem; color: rgba(255,255,255,.82); line-height: 1.7; }
+.btn-coral { border: 0; color: #fff; background: var(--coral); font-weight: 700; }
+.btn-coral:hover { color: #fff; background: #d9583d; }
+.search-panel { position: absolute; right: 0; bottom: 0; left: 0; max-width: 100%; margin-top: 0; padding: .6rem; background: rgba(255,255,255,.96); box-shadow: 0 16px 35px rgba(0,0,0,.14); }
+.search-panel .form-control, .search-panel .form-select { min-height: 54px; border: 0; color: var(--ink); background: transparent; }
+.search-panel .form-control:focus, .search-panel .form-select:focus { box-shadow: none; }
+.section-space { padding: 115px 0; }
+.light-section, .editorial-section { background: #f0eee8; }
+.section-heading { margin-bottom: 3rem; }
+.coral-text { color: var(--coral); }
+h2 { margin: 0; font-size: clamp(2.5rem, 4.5vw, 4.5rem); font-weight: 500; line-height: 1; letter-spacing: -.035em; }
+.text-link { padding-bottom: .5rem; border-bottom: 1px solid var(--ink); font-size: .82rem; font-weight: 700; }
+.destination-card { position: relative; display: block; min-height: 300px; overflow: hidden; color: #fff; background: var(--ink); }
+.destination-card.tall { min-height: 405px; }
+.destination-card img, .experience-image img, .journal-feature > img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.destination-card:hover img, .experience-card:hover .experience-image img, .journal-feature:hover > img { transform: scale(1.06); }
+.card-shade { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 34%, rgba(6,25,26,.85)); }
+.destination-label { position: absolute; right: 1.5rem; bottom: 1.45rem; left: 1.5rem; }
+.destination-label strong { display: block; font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 500; }
+.destination-label small { color: rgba(255,255,255,.74); font-size: .72rem; }
+.experience-card { height: 100%; background: #fff; }
+.experience-image { position: relative; height: 260px; overflow: hidden; }
+.price-tag { position: absolute; top: 1rem; right: 1rem; padding: .45rem .7rem; color: var(--ink); background: #fff; font-size: .75rem; font-weight: 700; }
+.card-body { padding: 1.65rem; }
+.category { color: var(--coral); font-size: .66rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.card-body h3 { margin: .65rem 0 .45rem; font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 500; }
+.card-body p { min-height: 48px; margin-bottom: 1.25rem; color: var(--muted); font-size: .88rem; line-height: 1.6; }
+.card-body a, .journal-caption a { font-size: .78rem; font-weight: 700; }
+.article-card img { width: 100%; height: 240px; margin-bottom: 1.25rem; object-fit: cover; }
+.article-card span { color: var(--muted); font-size: .72rem; }
+.article-card h3 { max-width: 300px; margin: .6rem 0 1rem; font-family: 'Playfair Display', serif; font-size: 1.55rem; font-weight: 500; }
+.article-card a { padding-bottom: .35rem; border-bottom: 1px solid var(--ink); font-size: .76rem; font-weight: 700; }
+.featured-section { padding: 90px 0; background: #fff; }
+.featured-copy { max-width: 510px; color: var(--muted); line-height: 1.75; }
+.featured-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 2.5rem; margin-top: 2rem; color: #71807b; font-family: Georgia, serif; font-size: 1.15rem; font-style: italic; }
+.featured-logos span:nth-child(2) { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-style: normal; font-weight: 700; letter-spacing: .18em; }
+.featured-logos span:nth-child(3) { font-size: 1.4rem; font-style: normal; }
+.featured-logos span:nth-child(4) { font-family: 'DM Sans', sans-serif; font-size: .95rem; font-style: normal; font-weight: 600; }
+.large-copy { max-width: 470px; margin: 2rem 0; color: var(--muted); font-size: 1.05rem; line-height: 1.8; }
+.journal-feature { position: relative; height: 510px; overflow: hidden; color: #fff; background: var(--ink); }
+.journal-feature > img { position: absolute; inset: 0; }
+.journal-feature::after { position: absolute; inset: 0; content: ''; background: linear-gradient(180deg, transparent 28%, rgba(8,30,31,.9)); }
+.journal-caption { position: absolute; z-index: 1; right: 2rem; bottom: 2rem; left: 2rem; }
+.journal-caption span { color: rgba(255,255,255,.7); font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }
+.journal-caption h3 { max-width: 420px; margin: .7rem 0 1.4rem; font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 500; }
+.journal-caption a { color: #fff; border-bottom: 1px solid rgba(255,255,255,.7); padding-bottom: .4rem; }
+.newsletter-section { padding: 85px 0; color: #fff; background: var(--coral); }
+.newsletter-box h2 { font-size: clamp(2.7rem, 5vw, 4.7rem); }
+.newsletter-box p:not(.eyebrow) { margin: 1rem 0 0; color: rgba(255,255,255,.8); }
+.newsletter-form { padding: .45rem; background: rgba(255,255,255,.18); }
+.newsletter-form input { min-width: 0; flex: 1; padding: 0 1rem; border: 0; outline: 0; color: #fff; background: transparent; }
+.newsletter-form input::placeholder { color: rgba(255,255,255,.75); }
+.newsletter-form .btn { color: var(--coral); background: #fff; white-space: nowrap; }
+.site-footer { padding: 75px 0 25px; color: #c7d0cb; background: var(--deep-ink); }
+.footer-logo { width: 175px; margin-bottom: 1.4rem; }
+.footer-copy { max-width: 290px; color: #7f9590; font-size: .88rem; line-height: 1.7; }
+.site-footer h3 { margin-bottom: 1.2rem; color: #fff; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
+.site-footer [class*='col-'] a:not(.social-links a) { display: block; margin-bottom: .7rem; color: #9aaca6; font-size: .84rem; }
+.site-footer [class*='col-'] a:hover { color: #fff; }
+.social-links { display: flex; gap: .7rem; }
+.social-links a { display: grid; width: 35px; height: 35px; place-items: center; border: 1px solid #506762; border-radius: 50%; color: #fff; font-size: .78rem; font-weight: 700; }
+.footer-bottom { display: flex; justify-content: space-between; gap: 1rem; margin-top: 65px; padding-top: 1.5rem; border-top: 1px solid #294341; color: #78908a; font-size: .72rem; }
+.footer-bottom a { color: #a7b7b1; }
+@media (max-width: 991px) { .navbar-collapse { padding: 1rem 0; } .hero-section { min-height: 780px; } }
+@media (max-width: 575px) { .section-space { padding: 75px 0; } .hero-section { min-height: 790px; } .hero-content { padding-top: 80px; padding-bottom: 190px; } .hero-section h1 { font-size: 3.7rem; } .search-panel { padding: .7rem; } .destination-card, .destination-card.tall { min-height: 280px; } .section-heading { margin-bottom: 2rem; } .journal-feature { height: 400px; } .journal-caption h3 { font-size: 2rem; } .footer-bottom { flex-direction: column; margin-top: 45px; } }
